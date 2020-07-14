@@ -26,7 +26,6 @@ $servername='localhost';
 
     }
     else{
-        echo 'Connection success<br/>';
         // we are connected to database
     }
 ?>
