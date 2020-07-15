@@ -5,79 +5,7 @@
 <head>
     <title> Attic Idioms in Plato's Meno </title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .main-div {
-            width: 80vw;
-            margin: 0 auto;
-        }
-
-        h2 {
-            text-align: center;
-        }
-
-        table {
-            margin: 15px auto;
-            width: 50 vw;
-            text-align: center;
-            border: 2px solid black; 
-
-        }
-
-        table tr td {
-            padding: 20px;
-            border: 2px solid black; 
-
-        }
-
-        .content-wrapper {
-            width: 100%;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        #create-form,
-        #delete-form,
-        #update-form {
-            display: none;
-
-        }
-
-        #create-button,
-        #delete-button,
-        #update-button {
-            width: 140 px;
-            height: 37.5 px;
-            background-color: blue;
-            color: #FFFFFF;
-            border-radius: 4px;
-            border: 1.5px solid black;
-            cursor: pointer;
-            letter-spacing: 1.5 px;
-
-        }
-
-        .small-button {
-            width: 70px;
-            height: 28.5px;
-            border-radius: 2px;
-            border: none;
-            cursor: pointer;
-            background-color: blue;
-            color: #FFFFFF;
-            padding: 3px;
-        }
-
-        input[Type='text'] {
-            margin: 6px;
-            width: 260px;
-            height: 32px;
-        }
-    </style>
-
+    <link rel='stylesheet' type='text/css' href='./assets/style.css'>
 </head>
 
 <body>
@@ -182,11 +110,11 @@
                 <input type='text' placeholder='Enter an idiom' name='update-idiom'><br>
                 <!-- ENTER IDIOM-->
                 <input type='text' placeholder='Enter the number of occurences' name='update-occurence'><br>
-                <!-- ENTER TRANSLATION --> 
+                <!-- ENTER OCCURENCES --> 
                 <input type='text' placeholder='Enter a translation' name='update-translation'><br>
-                <!-- ENTER OCCURENCES -->
-                <!-- ENTER COMMENTS-->
+                <!-- ENTER TRANSLATION -->
                 <input type='text' placeholder='Enter commentary' name='update-commentary'><br>
+                <!-- ENTER COMMENTS-->
                 <input type='submit' value='Save' name='submit-update' class="small-button">
                 <!-- Create a button that saves input -->
             </form>
