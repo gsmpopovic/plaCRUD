@@ -4,8 +4,7 @@
 
 <head>
     <title> Attic Idioms in Plato's Meno </title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <!-- Link to external stylesheet --> 
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">    <!-- Link to external stylesheet --> 
     <link rel='stylesheet' type='text/css' href='./assets/style.css'>
 </head>
 
