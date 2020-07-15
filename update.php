@@ -12,15 +12,21 @@ function updateRecord()
     // Connect to DB
     require('connect.php');
 
+    //User inputs for id, idiom, occurence and translation 
+    // in the record they'd like to edit 
+
     $id = $_POST['update-id'];
     $idiom = $_POST['update-idiom'];
     $occurence = $_POST['update-occurence'];
+    $translation = $_POST['update-translation'];
 
     // Update query
     $sql = "UPDATE `meno` 
             SET
             `idiom` = '$idiom',
-            `occurence` = '$occurence'
+            `occurence` = '$occurence',
+            `translation` = '$translation',
+            `commentary` = '$commentary'
             WHERE `id` = '$id' ";
 
     $update_query = mysqli_query($connection, $sql);

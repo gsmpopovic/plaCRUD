@@ -23,11 +23,13 @@
             margin: 15px auto;
             width: 50 vw;
             text-align: center;
+            border: 2px solid black; 
 
         }
 
         table tr td {
-            padding: 12 px;
+            padding: 20px;
+            border: 2px solid black; 
 
         }
 
@@ -119,6 +121,10 @@
                             <th> Idiom </th>
                         
                             <th> Occurence </th>
+
+                            <th> Translation </th>
+                            
+                            <th> Commentary </th> 
                         </tr>
                         </thead>
                         
@@ -136,6 +142,8 @@
                     <td> <?php echo $row['id'] ?> </td>
                     <td> <?php echo $row['idiom'] ?> </td>
                     <td> <?php echo $row['occurence'] ?> </td>
+                    <td> <?php echo $row['translation'] ?> </td>
+                    <td> <?php echo $row['commentary']?> </td> 
                 </tr>
 
             <?php endwhile ?>
@@ -158,7 +166,11 @@
                 <input type='text' placeholder='Enter an idiom' name='create-idiom'><br>
                 <!-- ENTER IDIOM -->
                 <input type='text' placeholder='Enter the number of occurences' name='create-occurence'><br>
-                <!-- ENTER MOVIE OCCURENCE -->
+                <!-- ENTER OCCURENCES-->
+                <input type='text' placeholder='Enter a translation' name='create-translation'><br>
+                <!-- ENTER TRANSLATION -->
+                <!-- ENTER TRANSLATION -->
+                <input type='text' placeholder='Enter commentary' name='create-commentary'><br>
                 <input type='submit' value='Save' name='create-button' class="small-button">
                 <!-- Create a button that saves input -->
             </form>
@@ -170,7 +182,11 @@
                 <input type='text' placeholder='Enter an idiom' name='update-idiom'><br>
                 <!-- ENTER IDIOM-->
                 <input type='text' placeholder='Enter the number of occurences' name='update-occurence'><br>
+                <!-- ENTER TRANSLATION --> 
+                <input type='text' placeholder='Enter a translation' name='update-translation'><br>
                 <!-- ENTER OCCURENCES -->
+                <!-- ENTER COMMENTS-->
+                <input type='text' placeholder='Enter commentary' name='update-commentary'><br>
                 <input type='submit' value='Save' name='submit-update' class="small-button">
                 <!-- Create a button that saves input -->
             </form>

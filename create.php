@@ -12,8 +12,16 @@
 
                     $occurence = $_POST['create-occurence'];
 
-                    $sql = "INSERT INTO meno(idiom, occurence)
-                     VALUES('$idiom', '$occurence')";
+                    // User input for idiom's translation
+
+                    $translation = $_POST['create-translation'];
+
+                    // User commentary on idiom 
+
+                    $commentary = $_POST['create-commentary'];
+
+                    $sql = "INSERT INTO meno(idiom, occurence, translation, commentary)
+                     VALUES('$idiom', '$occurence', '$translation', '$commentary')";
 
 
                     //Check if query successful
