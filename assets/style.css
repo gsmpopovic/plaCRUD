@@ -21,7 +21,7 @@ table {
 table tr td {
     padding: 20px;
     border: 2px solid black;
-    font-weight: bold;
+    font-size: larger;
 }
 
 .content-wrapper {
@@ -38,7 +38,7 @@ table tr td {
 
 #update-button {
     width: 140px;
-    height: 37.5px;
+    height: 40px;
     background-color: blue;
     color: #FFFFFF;
     border-radius: 4px;
@@ -49,7 +49,7 @@ table tr td {
 
 #create-button {
     width: 140px;
-    height: 37.5px;
+    height: 40px;
     background-color: green;
     color: #FFFFFF;
     border-radius: 4px;
@@ -60,7 +60,7 @@ table tr td {
 
 #delete-button {
     width: 140px;
-    height: 37.5px;
+    height: 40px;
     background-color: red;
     color: #FFFFFF;
     border-radius: 4px;
@@ -69,7 +69,18 @@ table tr td {
     letter-spacing: 1.5 px;
 }
 
-.small-button {
+#small-button-create {
+    width: 70px;
+    height: 28.5px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    background-color: green;
+    color: #FFFFFF;
+    padding: 3px;
+}
+
+#small-button-update {
     width: 70px;
     height: 28.5px;
     border-radius: 2px;
@@ -80,8 +91,29 @@ table tr td {
     padding: 3px;
 }
 
+#small-button-delete {
+    width: 70px;
+    height: 28.5px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    color: #FFFFFF;
+    padding: 3px;
+}
+
 input[Type='text'] {
     margin: 6px;
     width: 260px;
     height: 32px;
+}
+
+
+/* 
+*********************************************************************************************
+*/
+
+#trans,
+#comm {
+    font-style: italic;
 }

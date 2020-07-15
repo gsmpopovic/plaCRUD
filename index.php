@@ -68,10 +68,10 @@
                 <tr>
                     <!-- Create a row for each associative array, $row -->
                     <td> <?php echo $row['id'] ?> </td>
-                    <td> <?php echo $row['idiom'] ?> </td>
+                    <td id='idiom'> <?php echo $row['idiom'] ?> </td>
                     <td> <?php echo $row['occurence'] ?> </td>
-                    <td> <?php echo $row['translation'] ?> </td>
-                    <td> <?php echo $row['commentary']?> </td> 
+                    <td id='trans'> <?php echo $row['translation'] ?> </td>
+                    <td id='comm'> <?php echo $row['commentary']?> </td> 
                 </tr>
 
             <?php endwhile ?>
@@ -97,9 +97,9 @@
                 <!-- ENTER OCCURENCES-->
                 <input type='text' placeholder='Enter a translation' name='create-translation'><br>
                 <!-- ENTER TRANSLATION -->
-                <!-- ENTER TRANSLATION -->
                 <input type='text' placeholder='Enter commentary' name='create-commentary'><br>
-                <input type='submit' value='Save' name='create-button' class="small-button">
+                <!-- ENTER COMMENTS -->
+                <input type='submit' value='Create' name='create-button' id="small-button-create">
                 <!-- Create a button that saves input -->
             </form>
 
@@ -115,7 +115,7 @@
                 <!-- ENTER TRANSLATION -->
                 <input type='text' placeholder='Enter commentary' name='update-commentary'><br>
                 <!-- ENTER COMMENTS-->
-                <input type='submit' value='Save' name='submit-update' class="small-button">
+                <input type='submit' value='Update' name='submit-update' id="small-button-update">
                 <!-- Create a button that saves input -->
             </form>
 
@@ -124,7 +124,7 @@
             <form action='delete.php' method='POST' id='delete-form'>
                 <input type='text' placeholder='Enter a record ID' name='delete-id'><br>
                 <!-- ENTER ID -->
-                <input type='submit' value='Save' name='submit-delete' class="small-button">
+                <input type='submit' value='Delete' name='submit-delete' id="small-button-delete">
                 <!-- Create a button that saves input -->
             </form>
 
