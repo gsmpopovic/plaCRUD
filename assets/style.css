@@ -38,8 +38,8 @@ table tr td {
 #create-button,
 #delete-button,
 #update-button {
-    width: 140 px;
-    height: 37.5 px;
+    width: 140px;
+    height: 37.5px;
     background-color: blue;
     color: #FFFFFF;
     border-radius: 4px;
